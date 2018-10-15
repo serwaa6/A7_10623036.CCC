@@ -1,0 +1,59 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+struct student {long sID,string sName,int sAge,char sGender,int sScore,char sGrade;};
+class studentwriter{
+                     public:
+                        void write(student[])
+                                  { //creates a file if some do not exist or if exist then double of it.
+  
+                                    ofstream w;
+                                         w.open("studentdatafile.txt");
+                     for(int i=0;i<5;i++)
+                         {w<<s[i].sID<<"/t"<<s[i].sName<<"/t"<<s[i].sAge"/t"<<s[i].sGender"/t"<<s[i].sScore"/t"<<s[i].sGrade<<endl;}
+                                         w.close();
+                                    cout<<"Writing to file was successful"<<endl;  
+                                    };
+        int main(){
+             student stud[5];
+             for(int j=0;j<5;j++){
+               cout<<"Enter ID:"<< endl;
+                cin>>student[j].sID;
+               cour<<"Enter Name:"<< endl;
+                cin>>student[j].sname;
+               cout<<"Enter Age:"<< endl;
+                cin>>student[j].sAge;
+               cour<<"Enter Gender:"<< endl;
+                cin>>student[j].sGender;
+               cout<<"Enter score:"<<endl;
+                cin>>student[j].sScore;
+               cout<<"Enter Grade:"<<endl;
+                cin>>student[j].sGrade;
+                         switch(sGrade)
+                            { case 0 ... 39 :
+                                cout<<"F";
+                                   break;
+                              case 40 ... 49:
+                                cout<<"E";
+                                   break;
+                              case 50 ... 59:
+                                cout<<"D";
+                                   break;
+                              case 60 ... 69:
+                                cout<<"C";
+                                   break;
+                              case 70 ... 79:
+                                cout<<"B";
+                                   break;
+                              case 80 ... 100:
+                                cout<<"A";
+                                   break;
+                              default:
+                                cout<<" Grade can not be found " ;  }                 }
+              studentwrite swrite;
+              swrite.write(student[]);
+                                          return 0;
+                                                          }
+       
+                 
+                     
